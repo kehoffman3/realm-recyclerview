@@ -201,6 +201,7 @@ public class RealmRecyclerView extends FrameLayout {
     }
 
     public void setEmptyViewId(int id) {
+        emptyViewId = id;
         emptyContentContainer.setLayoutResource(id);
         emptyContentContainer.inflate();
     }
