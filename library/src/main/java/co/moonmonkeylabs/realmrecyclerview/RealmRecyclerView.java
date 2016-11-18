@@ -200,6 +200,11 @@ public class RealmRecyclerView extends FrameLayout {
                 "SwipeToDelete not supported with this layout type: " + type.name());
     }
 
+    public void setEmptyViewId(int id) {
+        emptyContentContainer.setLayoutResource(id);
+        emptyContentContainer.inflate();
+    }
+
     public void setOnLoadMoreListener(OnLoadMoreListener onLoadMoreListener) {
         this.onLoadMoreListener = onLoadMoreListener;
     }
